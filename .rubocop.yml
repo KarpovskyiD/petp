@@ -1,0 +1,51 @@
+AllCops:
+  SuggestExtensions:
+    Enabled: false
+  Exclude:
+    - '**/bin/spring'
+    - '**/bin/setup'
+    - '**/bin/rake'
+    - '**/bin/rails'
+    - '**/db/schema.rb'
+    - 'client/**/**'
+    - 'config/**/**'
+    - 'db/**/**'
+    - 'bin/**'
+    - 'app/models/role.rb'
+    - 'vendor/*'
+Style/Documentation:
+  Enabled: false
+Layout/LineLength:
+  Max: 120
+Metrics/MethodLength:
+  Max: 20
+AllCops:
+  Exclude:
+    - 'spec/**/*'
+  TargetRubyVersion: 2.7
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 120
+  Exclude:
+  - 'bin/bundle'
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 30
+
+Metrics/ClassLength:
+  Max: 150
+  
+Naming/AccessorMethodName:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
